@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+}
+
+.background_video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: -20px;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.whiteline_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+
+  margin-left: 50%;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.heading > hr {
+  display: none;
+  position: relative;
+  width: 0%;
+  color: transparent;
+}
+
+.container {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 5dvh;
+  position: relative;
+  margin-left: 2rem;
+  overflow-wrap: anywhere;
+}
+
+.slider {
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  box-shadow: -5px 8px 10px 20px rgba(0, 0, 0, 0.3);
+  margin-left: 7rem;
+}
+
+.slider_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 4px;
+}
+
+.slider_buttons > button {
+  height: 40px;
+  width: 50px;
+  background-color: #007bff;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.slider_buttons > button:hover {
+  transform: scale(1.2);
+  background-color: #3399ff;
+}
+
+.counter {
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  margin-left: 2px;
+  z-index: 3;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.5s ease;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay */
+  z-index: -1;
+}
+
+h3 {
+  position: relative;
+  margin-top: 45%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  color: white;
+  z-index: 3;
+  font-size: 28px;
+}
+
+.s1 {
+  background-image: url("images/chevrolet-corvette.jpg");
+  transform: translateX(0%);
+}
+.s2 {
+  background-image: url("images/Porsche_718_Cayman.jpg");
+}
+.s3 {
+  background-image: url("images/Porsche_718_Boxster.webp");
+}
+.s4 {
+  background-image: url("images/toyota_gr_supra.jpg");
+}
+.s5 {
+  background-image: url("images/2025_BMW_Z4.jpeg");
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .whiteline_top {
+    height: 5rem;
+    margin-left: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .heading {
+    font-size: 22px;
+    margin-bottom: 3rem;
+  }
+
+  .heading > hr {
+    width: 60%;
+  }
+
+  .container {
+    padding: 5px;
+    margin-left: 1rem;
+  }
+
+  .slider {
+    height: 50vh;
+    width: 97%;
+    margin-left: 0;
+    border-radius: 5px;
+  }
+
+  .slider_buttons > button {
+    height: 30px;
+    width: 40px;
+  }
+
+  .slide > h1 {
+    font-size: 24px;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .content_line {
+    height: 5rem;
+    margin-top: 1rem;
+  }
+
+  .counter {
+    font-size: 20px;
+  }
+}

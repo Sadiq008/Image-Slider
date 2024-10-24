@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <video class="background_video" muted autoplay loop>
+      <source src="videos/race.mp4" />
+    </video>
+    <div class="title">
+      <h1>Sports Cars</h1>
+    </div>
+    <div class="whiteline_top"></div>
+    <div class="heading">
+      <h2>Top 5 Best Sports Cars</h2>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div class="slide s1">
+          <h3>#1 2025 Chevrolet Corvette</h3>
+        </div>
+        <div class="slide s2">
+          <h3>#2 2024 Porsche 718 Cayman</h3>
+        </div>
+        <div class="slide s3">
+          <h3>#3 2024 Porsche 718 Boxster</h3>
+        </div>
+        <div class="slide s4">
+          <h3>#4 2025 Toyota GR Supra</h3>
+        </div>
+        <div class="slide s5">
+          <h3>#5 2025 BMW Z4</h3>
+        </div>
+      </div>
+      <div class="slider_buttons">
+        <button class="btn_prev"><img src="images/left-chevron.svg" /></button>
+        <span class="counter">
+          <span class="current">0</span>
+          /
+          <span class="total">5</span>
+        </span>
+        <button class="btn_next"><img src="images/right-chevron.svg" /></button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="animation.js"></script>
+  </body>
+</html>
